@@ -101,5 +101,6 @@ const addImages = getEle("#addImage");
 const addHighlight = getEle("#addHighlight");
 addImages.addEventListener("click", (event) => { addItem(event, getEle(".form__render--image")) });
 addHighlight.addEventListener("click", (event) => { addItem(event, getEle(".form__highlights")) });
+getEle("#warning").volume = 0.2
 renderJson();
 changeValue();
