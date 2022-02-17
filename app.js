@@ -26,9 +26,14 @@ const renderJson = () => {
   if (flag) {
     getEle(".message").innerHTML = "Success";
     getEle(".form").style.border = "2px solid green";
+    getEle(".json").classList.remove("err");
+    getEle("#warning").pause();
+
   } else {
     getEle(".message").innerHTML = "Error";
     getEle(".form").style.border = "1px solid red";
+    getEle(".json").classList.add("err");
+    getEle("#warning").play();
   }
   let arrImg = [];
   let arrhighlight = [];

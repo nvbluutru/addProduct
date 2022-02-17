@@ -33,7 +33,22 @@ textarea:focus {
   height: 100vh;
   margin: 20px;
   border: 1px solid black !important;
+  background: #07744b;
+  color: white;
 }
 .message {
   text-align: center;
+}
+.json.err {
+  animation: warning 0.3s infinite alternate;
+  background-color: #000b2a;
+}
+@keyframes warning {
+  from {
+    transform: scale(0.97);
+    background-color: rgb(156, 9, 9);
+  }
+  to {
+    transform: scale(1);
+  }
 }
